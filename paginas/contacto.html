@@ -1,0 +1,104 @@
+<!doctype html> 
+<html lang="en">   
+	<head>     <!-- Required meta tags -->
+	     <title>Pequeña Orquesta Reincidentes
+	     </title>       
+	<meta charset="utf-8">     
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <!-- Bootstrap CSS -->     	
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+   <link rel="stylesheet"  type="text/css" href="estilo_contacto.css">
+   <script>
+function iniciar(){
+nombre1=document.getElementById("nombre");
+mail=document.getElementById("correo");
+texto=document.getElementById("mensaje");
+nombre1.addEventListener("input", validacion, false);
+mail.addEventListener("input", validacion, false);
+texto.addEventListener("input", validacion, false);
+validacion();
+}
+function validacion(){
+if(mail.value=='' ||  texto.value=='' ){
+mail.setCustomValidity('inserte al menos un Correo y su comentario');
+mail.style.background='#F9F348  ';
+texto.style.background='#F9F348  ';
+}else{
+mail.setCustomValidity('');
+mail.style.background='#FFFFFF';
+texto.setCustomValidity('');
+texto.style.background='#FFFFFF';
+}
+}
+window.addEventListener("load", iniciar, false);
+</script>
+	</head>   
+		<body> 
+			<section class="container" id="contenedor">
+			
+			<header id="cabecera" class="row">
+			<nav id="botonera" class="col-lg-12 col-sm-12 ">
+			
+				<ul class="nav nav-tabs">
+			  <li class="nav-item">
+				<a class="nav-link active" href="../index.html">Inicio</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="historia.html">Discografia</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			  </li>
+			</ul>	
+			
+			</nav>
+			<div id="marca" class="col-lg-12 col-sm-12"></div>
+			</header>
+			<section id="contenido">
+			<div id="caja2" class="col-lg-12 col-sm-12">
+			
+			<form class="form" name="consulta" method="post" action="Enviar_datos.php">
+			<h6><em><strong>Nos interesa tu comentario</strong></em></h6>
+				<input id="nombre" type="text" name="nombre" placeholder="Nombre"></input>
+			<input id="correo" type="email" name="correo"placeholder="Dirección de correo"></input>
+			<input id="mensaje" name="mensaje" placeholder="Comentarios"></input>
+			<button type="submit" class="btn">Enviar</button>
+			
+			</form>
+			
+			</div>
+			<div id="caja3" class="col-lg-12 col-sm-12 " role="alert">
+			
+			<center>
+			<div class="alert alert-light" role="alert">
+		<a href="https://www.youtube.com/watch?v=d77K-cH2dPA" class="alert-link">MIRÁ NUESTRO DOCUMENTAL</a>
+		</div>
+			<center>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="80" height="130" viewBox="-15 0 160 160">
+
+			<polyline id="flecha1" points="10,50 65,20 120,50" fill="none"
+			stroke-width="20" stroke="black" stroke-linejoin="miter" />
+	
+			<polyline id="flecha2" points="10,85 65,55 120,85" fill="none"
+			stroke-width="20" stroke="yellow" stroke-linejoin="round" />
+	
+			<polyline id="flecha3" points="10,120 65,90 120,120" fill="none"
+			stroke-width="20" stroke="black" stroke-linejoin="bevel" />
+	
+</svg></center>
+</div>
+			
+			</section>
+			
+			<footer id="pie">
+			<div id="texto_pie" class="col-lg-12 col-sm-12">
+			
+			
+			</div>
+			</footer>
+			
+				<!-- Optional JavaScript -->     <!-- jQuery first, then Popper.js, then Bootstrap JS -->     
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+		</body> 
+</html>

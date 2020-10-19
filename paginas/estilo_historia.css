@@ -1,0 +1,40 @@
+#contenedor{
+
+
+}
+#cabecera{
+
+
+height:200px
+}
+#contenido{
+	
+}
+
+#marca{
+	background-image: url("../fondo22.jpg");
+	 background-size: contain;
+	 height:150px
+}
+#botonera{
+	height:50px
+}
+#redes{
+	 background-image: url("../fondo7.jpg");
+
+}
+
+#caja2 p {
+
+}
+
+
+#texto_pie{
+  background-image: url("../fondo.jpg");
+  background-size: contain;
+  height:70px
+}
+#caja3 p {
+  
+}
+
